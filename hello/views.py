@@ -10,7 +10,7 @@ def dl(request):
     return render(request, 'index.html')
     
 def index (request):
-    return HttpResponse('<pre>' + 'ML2016CSWZ' + '</pre>')
+    return HttpResponse('<pre>' + 'ML2016CSWZ, gang chen say hello' + '</pre>')
 
 def db(request):
 
