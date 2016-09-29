@@ -8,9 +8,9 @@ from .models import Greeting
 def index(request):
     # return HttpResponse('Hello from Python!')
     return render(request, 'index.html')
-
+    
 def dl (request):
-    return render (request, 'db.html', 'Machine Learning 2016 CSWZ")
+    return HttpResponse('<pre>' + 'ML2016CSWZ' + '</pre>')
 
 def db(request):
 
