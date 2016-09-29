@@ -5,11 +5,11 @@ from .models import Greeting
 
 # Create your views here.
 
-def index(request):
+def dl(request):
     # return HttpResponse('Hello from Python!')
     return render(request, 'index.html')
     
-def dl (request):
+def index (request):
     return HttpResponse('<pre>' + 'ML2016CSWZ' + '</pre>')
 
 def db(request):
