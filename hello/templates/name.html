@@ -1,0 +1,29 @@
+
+
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+  <div class="container">
+
+
+<h2>Machine Learning 2016 CSWZ Group</h2>
+
+
+<ul>
+
+  <form action="your_name" method="post">
+      {% csrf_token %}
+      {{ form }}
+      <input type="submit" value="Submit" />
+  </form>
+
+{% for namelist in namelists %}
+  <li>{{ namelist.name }}</li>
+{% endfor %}
+
+</ul>
+
+</div>
+
+{% endblock %}
