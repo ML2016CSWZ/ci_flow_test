@@ -12,7 +12,7 @@ def learn(request):
 
 def dl(request):
     # return HttpResponse('Hello from Python!')
-    return HttpResponse('<pre>' + 'going to show hand writing weight and bias' + '</pre>')
+    return HttpResponse('<pre>' + 'going to show hand writing weight and bias (test from j)' + '</pre>')
 
 
 def index (request):
