@@ -5,9 +5,14 @@ from .models import Greeting
 
 # Create your views here.
 
-def dl(request):
+def learn(request):
     # return HttpResponse('Hello from Python!')
     return render(request, 'index.html')
+
+def dl(request):
+    # return HttpResponse('Hello from Python!')
+    return HttpResponse('<pre>' + 'going to show hand writing weight and bias' + '</pre>')
+
 
 def index (request):
     return HttpResponse('<pre>' + 'ML2016CSWZ, gang chen say hello, gordon' + '</pre>')
