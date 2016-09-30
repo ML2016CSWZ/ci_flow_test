@@ -8,9 +8,9 @@ from .models import Greeting
 def dl(request):
     # return HttpResponse('Hello from Python!')
     return render(request, 'index.html')
-    
+
 def index (request):
-    return HttpResponse('<pre>' + 'ML2016CSWZ, gang chen say hello' + '</pre>')
+    return HttpResponse('<pre>' + 'ML2016CSWZ, gang chen say hello, gordon' + '</pre>')
 
 def db(request):
 
@@ -20,4 +20,3 @@ def db(request):
     greetings = Greeting.objects.all()
 
     return render(request, 'db.html', {'greetings': greetings})
-
